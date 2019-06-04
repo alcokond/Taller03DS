@@ -68,6 +68,11 @@ public class Bank {
         inputText = input.nextLine();           
         return inputText;
     }
+    public static void Login(){
+        String nombre = readConsole("Nombre :");
+        int id = Integer.valueOf(readConsole("Id: "));
+        
+    }
 
     public static void createUser(){
         String nombre = readConsole("Nombre :");
