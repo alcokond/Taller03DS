@@ -68,11 +68,6 @@ public class Bank {
         inputText = input.nextLine();           
         return inputText;
     }
-    public static void Login(){
-        String nombre = readConsole("Nombre :");
-        int id = Integer.valueOf(readConsole("Id: "));
-        
-    }
 
     public static void createUser(){
         String nombre = readConsole("Nombre :");
@@ -85,11 +80,13 @@ public class Bank {
         int id = Integer.valueOf(readConsole("Key: "));
         double money = Double.valueOf(readConsole("Dinero a consignar: "));
         users.get(id-1).setMoney(users.get(id-1).getMoney() + money);
+        System.out.println("------------------------------------");
     }
     public static void myMoney(){
         int id = Integer.valueOf(readConsole("Key: "));
         double money = Double.valueOf(readConsole("Dinero a consignar: "));
         users.get(id-1).setMoney(users.get(id-1).getMoney() - money);
+        System.out.println("------------------------------------");
     }
     public static void viewUsers(){
         System.out.println("------------------------------------");
